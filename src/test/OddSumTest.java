@@ -25,4 +25,12 @@ public class OddSumTest {
         Assert.assertEquals(-1, OddSum.run(in, true));
     }
 
+    @Test
+    public void testFailure() throws Exception {
+        String[] in = {"1", "2", "3", "4", "5", "6"};
+        // Intentionally wrong result
+        Assert.assertEquals(100, OddSum.run(in, true));
+    }
+
+
 }
